@@ -86,9 +86,8 @@ class Brainfuck {
           this.tape[this.pointer] = 10;
         } else {
           this.tape[this.pointer] = input.charCodeAt(inputPos);
+          inputPos++;
         }
-
-        inputPos++;
       }
 
       if (command === '[' && this.tape[this.pointer] === 0) {
